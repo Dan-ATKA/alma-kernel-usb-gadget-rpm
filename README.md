@@ -62,4 +62,4 @@ Enjoy.
 # As root:
 rpm -ivh kernel-dan-usb-simul-*.rpm
 ```
-rpm files are available on Vazypompe
+rpm files are available on Vazypompe. This documentation on [Gitea](https://gitea.atadaniel.fr/Daniel/alma-kernel-usb-gadget-rpm) or [Github](https://github.com/Dan-ATKA/alma-kernel-usb-gadget-rpm)
