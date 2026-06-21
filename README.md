@@ -23,9 +23,25 @@ If there is no return, or something looking like this :
 ````
 Then the virtual usb port have successfully loaded.
 
+Now try this
 ```bash
 # As root:
-modprobe g_mass_storage file=
+modprobe g_mass_storage
+```
+It should load Mass Storage Gadget (MSG), which also load libcomposite and usb_f_mass_storage.
+You may see nothing, or something like :
+```
+[  295.895316] Mass Storage Function, version: 2009/09/11
+[  295.895977] LUN: removable file: (no medium)
+[  295.896723] no file given for LUN0
+[  295.897503] udc dummy_udc.0: failed to start g_mass_storage: -22
+[  295.897830] g_mass_storage gadget.0: probe with driver g_mass_storage failed with error -22
+[  295.898177] UDC core: g_mass_storage: couldn't find an available UDC
+[  593.397745] Mass Storage Function, version: 2009/09/11
+[  593.398478] LUN: removable file: (no medium)
+[  593.399511] no file given for LUN0
+[  593.400684] udc dummy_udc.0: failed to start g_mass_storage: -22
+[  593.401097] g_mass_storage gadget.0: probe with driver g_mass_storage failed with error -22
+[  593.401297] UDC core: g_mass_storage: couldn't find an available UDC
 ```
 
-Test
