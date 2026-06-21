@@ -1,6 +1,6 @@
 # alma-kernel-usb-gadget-rpm
 Kernel with added back usb gadget to allow simulation of usb drive from disk image
-
+***
 ## First, check if you already have the drivers, no use to install this if it's already working
 
 Try to load the Dummy Host Controller Driver module 
@@ -51,4 +51,14 @@ Unload the empty gadget :
 # As root:
 modprobe -r g_mass_storage
 ```
-Then use your file as a drive, see the [documentation](./documentation/mass-storage.rst)
+Then use your file as a drive, see the [documentation](./documentation/mass-storage.rst) or follow this example :
+```bash
+# As root:
+modprobe g_mass_storage file=path/to/your_image.raw removable=1
+```
+Enjoy.
+-----
+```bash
+# As root:
+rpm -ivh 
+```
