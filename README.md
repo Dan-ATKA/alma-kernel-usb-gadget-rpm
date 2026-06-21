@@ -44,4 +44,11 @@ You may see nothing, or something like :
 [  593.401097] g_mass_storage gadget.0: probe with driver g_mass_storage failed with error -22
 [  593.401297] UDC core: g_mass_storage: couldn't find an available UDC
 ```
+Then, you're ready to use.
 
+Unload the empty gadget :
+```bash
+# As root:
+modprobe -r g_mass_storage
+```
+Then use your file as a drive, see the [documentation][documentation/mass-storage.rst]
