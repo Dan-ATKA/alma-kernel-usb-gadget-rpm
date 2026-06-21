@@ -51,4 +51,4 @@ Unload the empty gadget :
 # As root:
 modprobe -r g_mass_storage
 ```
-Then use your file as a drive, see the [documentation][documentation/mass-storage.rst]
+Then use your file as a drive, see the [documentation](./documentation/mass-storage.rst)
