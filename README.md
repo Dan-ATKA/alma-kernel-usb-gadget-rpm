@@ -60,5 +60,6 @@ Enjoy.
 -----
 ```bash
 # As root:
-rpm -ivh 
+rpm -ivh kernel-dan-usb-simul-*.rpm
 ```
+rpm files are available on Vazypompe
